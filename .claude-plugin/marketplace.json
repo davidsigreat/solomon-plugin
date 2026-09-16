@@ -1,0 +1,9 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "solomon",
+  "description": "Solomon task-hub integration for Claude Code.",
+  "owner": { "name": "David Si" },
+  "plugins": [
+    { "name": "solomon", "description": "Auto-log work to Solomon; card standards; backlog sync; portfolio status.", "source": "./", "category": "productivity" }
+  ]
+}

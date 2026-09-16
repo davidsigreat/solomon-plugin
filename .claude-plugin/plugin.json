@@ -1,0 +1,8 @@
+{
+  "name": "solomon",
+  "version": "1.0.0",
+  "description": "Keep Solomon (cross-project task hub) current: auto-log work as it starts, ships, and gets planned. Card standards, backlog sync, portfolio status.",
+  "author": { "name": "David Si" },
+  "hooks": "./hooks/hooks.json",
+  "mcpServers": "./.mcp.json"
+}
