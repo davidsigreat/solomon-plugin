@@ -11,15 +11,16 @@ Keeps [Solomon](https://solomondash.vercel.app) current while you work. Cards ge
 | `skills/solomon-status` | `/solomon-status [project]` — read-only portfolio report. |
 | `hooks/session-start.js` | Arms logging each session. |
 | `hooks/ship-reminder.js` | After `git commit/push/merge`, `gh pr create/merge`, `vercel deploy` → reminds the agent to update the card. |
-| `.mcp.json` | Solomon MCP server (HTTP). Needs `SOLOMON_API_KEY`. |
+| `.mcp.json` | Solomon MCP server (HTTP). Key + URL come from plugin `userConfig` (prompted at install). |
 
 ## Install
 
 ```bash
-export SOLOMON_API_KEY=sk_live_...   # mint in Solomon → Profile; put in ~/.zshrc
 claude plugin marketplace add ~/Documents/dev/solomon-plugin
 claude plugin install solomon@solomon
 ```
+
+On install Claude Code prompts for **Solomon API key** (mint in Solomon → Profile, `sk_live_…`). Stored in Keychain, never in a file. Change later: `/plugin` → solomon → Configure, or `claude plugin config solomon`.
 
 Already have `solomon` in `~/.claude.json` `mcpServers`? Remove it — the plugin's `.mcp.json` replaces it (otherwise tools appear twice).
 

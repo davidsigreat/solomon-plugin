@@ -1,7 +1,9 @@
 {
-  "solomon": {
-    "type": "http",
-    "url": "https://solomondash.vercel.app/api/mcp",
-    "headers": { "Authorization": "Bearer ${SOLOMON_API_KEY}" }
+  "mcpServers": {
+    "solomon": {
+      "type": "http",
+      "url": "${user_config.url}",
+      "headers": { "Authorization": "Bearer ${user_config.api_key}" }
+    }
   }
 }

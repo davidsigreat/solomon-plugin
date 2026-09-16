@@ -1,8 +1,22 @@
 {
   "name": "solomon",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Keep Solomon (cross-project task hub) current: auto-log work as it starts, ships, and gets planned. Card standards, backlog sync, portfolio status.",
   "author": { "name": "David Si" },
   "hooks": "./hooks/hooks.json",
-  "mcpServers": "./.mcp.json"
+  "mcpServers": "./.mcp.json",
+  "userConfig": {
+    "api_key": {
+      "type": "string",
+      "title": "Solomon API key",
+      "description": "sk_live_… token minted in Solomon → Profile. Stored in Keychain.",
+      "sensitive": true
+    },
+    "url": {
+      "type": "string",
+      "title": "Solomon MCP URL",
+      "description": "Override only for self-hosted Solomon.",
+      "default": "https://solomondash.vercel.app/api/mcp"
+    }
+  }
 }
