@@ -16,7 +16,7 @@ Keeps [Solomon](https://solomondash.vercel.app) current while you work. Cards ge
 ## Install
 
 ```bash
-claude plugin marketplace add ~/Documents/dev/solomon-plugin
+claude plugin marketplace add DevColaDavid/solomon-plugin
 claude plugin install solomon@solomon
 ```
 
