@@ -1,14 +1,19 @@
 {
   "name": "solomon",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Keep Solomon (cross-project task hub) current: auto-log work as it starts, ships, and gets planned. Card standards, backlog sync, portfolio status.",
-  "author": { "name": "David Si" },
+  "author": {
+    "name": "David Si"
+  },
+  "homepage": "https://github.com/davidsigreat/solomon-plugin",
+  "repository": "https://github.com/davidsigreat/solomon-plugin",
+  "license": "MIT",
   "mcpServers": "./.mcp.json",
   "userConfig": {
     "api_key": {
       "type": "string",
       "title": "Solomon API key",
-      "description": "sk_live_… token minted in Solomon → Profile. Stored in Keychain.",
+      "description": "sk_live_\u2026 token minted in Solomon \u2192 Profile. Stored in Keychain.",
       "sensitive": true
     },
     "url": {

@@ -5,7 +5,7 @@ description: Log work to Solomon (cross-project task hub). Use when starting, fi
 
 # Solomon
 
-Solomon is the status hub across all of David's projects. Every meaningful unit of work — a feature, fix, content batch, migration — gets a **card** (task), kept current as work moves. The repo is the source of truth for *what* changed; Solomon is the source of truth for *where things stand*.
+Solomon is the status hub across all of the user's projects. Every meaningful unit of work — a feature, fix, content batch, migration — gets a **card** (task), kept current as work moves. The repo is the source of truth for *what* changed; Solomon is the source of truth for *where things stand*.
 
 Tools (load with `ToolSearch` query `solomon`): `list_projects`, `list_tasks`, `portfolio_status`, `upsert_task`. No delete, no assignee, no project create — see Limits.
 
